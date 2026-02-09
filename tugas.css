@@ -1,0 +1,186 @@
+/* Reset & General */
+* {
+    margin: 0; padding: 0; box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #fcfcfc;
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- LOGO CSS MURNI --- */
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-css {
+    width: 50px;
+    height: 50px;
+    background: #0a3d62;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-bottom: 4px solid #f39c12;
+}
+
+.logo-css .letter {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.company-name {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3rem;
+    color: #0a3d62;
+    line-height: 1;
+}
+
+.tagline {
+    font-size: 0.8rem;
+    letter-spacing: 3px;
+    color: #f39c12;
+    font-weight: 700;
+}
+
+/* --- Navigation --- */
+header {
+    background: white;
+    padding: 15px 0;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #0a3d62;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-cta-nav {
+    background: #0a3d62;
+    color: white !important;
+    padding: 8px 20px;
+    border-radius: 5px;
+}
+
+/* --- Hero Section --- */
+.hero {
+    height: 90vh;
+    background: url('https://images.unsplash.com/photo-1504307651254-35682f94a1d8?q=80&w=2070') no-repeat center center/cover;
+}
+
+.hero-overlay {
+    height: 100%;
+    background: rgba(10, 61, 98, 0.85);
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    color: white;
+}
+
+.hero-content h2 {
+    font-size: 3.5rem;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 20px;
+}
+
+.hero-content span {
+    color: #f39c12;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 15px 35px;
+    background: #f39c12;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+/* --- Services Grid --- */
+.services { padding: 80px 20px; }
+.section-title { text-align: center; margin-bottom: 50px; }
+.line { width: 60px; height: 5px; background: #f39c12; margin: 10px auto; }
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.service-card {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    transition: 0.4s;
+}
+
+.service-card:hover { transform: translateY(-10px); background: #0a3d62; color: white; }
+
+.icon-box {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+/* --- Engineer Section --- */
+.engineer-flex {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 60px 0;
+}
+
+.engineer-img img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 20px 20px 0 #f39c12;
+}
+
+footer {
+    background: #0a3d62;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .nav-links { display: none; }
+    .hero-content h2 { font-size: 2.2rem; }
+    .engineer-flex { flex-direction: column; }
+}
